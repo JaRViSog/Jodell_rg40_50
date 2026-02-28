@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ros2_jodell_epg40_050_gripper_rs485_interface</name>
+  <version>0.0.0</version>
+  <description>ROS 2 interface for TF03 LiDAR over CAN</description>
+
+  <maintainer email="nrih.robotics@gmail.com">Usama</maintainer>
+  <license>Apache 2.0</license>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>python3-pyqt5</exec_depend>
+
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>ros2_tf03_lidar_msgs</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+
+</package>
+
+
+
+ 
+
+
+  
+  
+
+
+ 

@@ -1,0 +1,4 @@
+int32 slave_id
+---
+bool success
+string message

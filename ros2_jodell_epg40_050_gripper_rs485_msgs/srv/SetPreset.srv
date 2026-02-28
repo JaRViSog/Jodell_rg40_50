@@ -1,0 +1,8 @@
+int32 preset_id
+string name
+int32 position
+int32 speed
+int32 force
+---
+bool success
+string message

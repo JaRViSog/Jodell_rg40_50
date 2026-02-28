@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="Gripper">
+    <ros2_control name="GripperSystem" type="system">
+      <hardware>
+        <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+      </hardware>
+
+      <joint name="Component19_Slider-8">
+        <command_interface name="position"/>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>
+
+      <joint name="Component19_Slider-9">
+        <command_interface name="position"/>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>
+    </ros2_control>
+    <link name= "base_link"/>
+    <link name="Gripper-Jaws-v1">
+        <inertial>
+            <origin xyz="-0.0025431546069382073 0.007523126059983256 0.011720744722316188" rpy="0.0 -0.0 0.0" />
+            <mass value="0.022192771245879192" />
+            <inertia ixx="2.820225279489667e-06" iyy="2.5581744598638306e-06" izz="6.215479497285636e-07" ixy="-6.355569130281804e-08" iyz="-3.252793114714653e-07" ixz="1.0661167857995517e-07" />
+        </inertial>
+        <visual name="Gripper-Jaws-v1_visual">
+            <origin xyz="0.003000000000000014 0.003500000000000023 -0.001600000001550035" rpy="1.5707963267948997 -1.3877787807811563e-17 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://gripper_control/meshes/Gripper-Jaws-v1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="grey">
+                <color rgba="0.5 0.5 0.5 1"/>
+            </material>
+        </visual>
+        <collision name="Gripper-Jaws-v1_collision">
+            <origin xyz="0.003000000000000014 0.003500000000000023 -0.001600000001550035" rpy="1.5707963267948997 -1.3877787807811563e-17 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://gripper_control/meshes/Gripper-Jaws-v1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="Gripper-Jaws-v1-1">
+        <inertial>
+            <origin xyz="0.002543154606938174 -0.0065231260599832135 0.012020744722316202" rpy="0.0 -0.0 0.0" />
+            <mass value="0.022192771245879192" />
+            <inertia ixx="2.8202252794896363e-06" iyy="2.558174459863783e-06" izz="6.215479497285687e-07" ixy="-6.355569130281995e-08" iyz="3.252793114714633e-07" ixz="-1.0661167857994416e-07" />
+        </inertial>
+        <visual name="Gripper-Jaws-v1-1_visual">
+            <origin xyz="-0.002999999999999967 -0.0024999999999999957 -0.0013000000015500391" rpy="1.5707963267948948 1.3877787807812953e-17 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://gripper_control/meshes/Gripper-Jaws-v1-1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="grey">
+                <color rgba="0.5 0.5 0.5 1"/>
+            </material>
+        </visual>
+        <collision name="Gripper-Jaws-v1-1_collision">
+            <origin xyz="-0.002999999999999967 -0.0024999999999999957 -0.0013000000015500391" rpy="1.5707963267948948 1.3877787807812953e-17 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://gripper_control/meshes/Gripper-Jaws-v1-1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="Component2">
+        <inertial>
+            <origin xyz="-0.0002042429980385263 -0.003746590432939555 0.002129862789814424" rpy="0.0 -0.0 0.0" />
+            <mass value="0.024460828846372788" />
+            <inertia ixx="3.8682532909318477e-07" iyy="3.618487620262393e-06" izz="3.7178296801236345e-06" ixy="2.233655461316277e-08" iyz="-4.275447574900833e-09" ixz="6.019408370092207e-10" />
+        </inertial>
+        <visual name="Component2_visual">
+            <origin xyz="-0.014990000000000028 -0.012250000001550012 -0.006749999999999974" rpy="-1.5707963267948966 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://gripper_control/meshes/Component2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="white">
+                <color rgba="1.0 1.0 1.0 1"/>
+            </material>
+        </visual>
+        <collision name="Component2_collision">
+            <origin xyz="-0.014990000000000028 -0.012250000001550012 -0.006749999999999974" rpy="-1.5707963267948966 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://gripper_control/meshes/Component2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="Component3">
+        <inertial>
+            <origin xyz="0.00020424299803851518 0.003746590432939597 0.002129862789814432" rpy="0.0 -0.0 0.0" />
+            <mass value="0.02446082884637278" />
+            <inertia ixx="3.868253290931852e-07" iyy="3.618487620262395e-06" izz="3.7178296801236375e-06" ixy="2.233655461316195e-08" iyz="4.2754475749001976e-09" ixz="-6.019408370102133e-10" />
+        </inertial>
+        <visual name="Component3_visual">
+            <origin xyz="0.014989999999999976 0.01225000000155007 -0.00675000000000002" rpy="1.5707963267948966 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://gripper_control/meshes/Component3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="white">
+                <color rgba="1.0 1.0 1.0 1"/>
+            </material>
+        </visual>
+        <collision name="Component3_collision">
+            <origin xyz="0.014989999999999976 0.01225000000155007 -0.00675000000000002" rpy="1.5707963267948966 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://gripper_control/meshes/Component3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="Component19">
+        <inertial>
+            <origin xyz="0.0006136407896993089 8.137229863817442e-09 -0.04362888310917896" rpy="0.0 0.0 0.0" />
+            <mass value="2.9132748167487055" />
+            <inertia ixx="0.003156238502765635" iyy="0.0035461291900727642" izz="0.0018757717337307004" ixy="1.2756593703873e-09" iyz="-1.1946946600036706e-09" ixz="1.6010605934863446e-05" />
+        </inertial>
+        <visual name="Component19_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://gripper_control/meshes/Component19.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="gold">
+                <color rgba="0.8 0.8 0.0 1"/>
+            </material>
+        </visual>
+        <collision name="Component19_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://gripper_control/meshes/Component19.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="base_to_component19" type="fixed"> 
+        <origin xyz="0 0 0" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="Component19" /> 
+    </joint>
+    <joint name="Component3_Rigid-5" type="fixed">
+        <origin xyz="-0.01551 -0.0029500000000000017 0.0012249999999999995" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="Component3" />
+        <child link="Gripper-Jaws-v1-1" />
+    </joint>
+    <joint name="Component2_Rigid-6" type="fixed">
+        <origin xyz="0.01551 0.003250000000000002 0.00225" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="Component2" />
+        <child link="Gripper-Jaws-v1" />
+    </joint>
+    <joint name="Component19_Slider-8" type="prismatic">
+        <origin xyz="0.0 -0.006750000000000001 0.011399999999999999" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="Component19" />
+        <child link="Component2" />
+        <axis xyz="1.0 0.0 0.0" />
+        <limit lower="-0.015" upper="0.015" effort="50" velocity="0.1" />
+    </joint>
+    <joint name="Component19_Slider-9" type="prismatic">
+        <origin xyz="0.0 0.006750000000000001 0.011399999999999999" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="Component19" />
+        <child link="Component3" />
+        <axis xyz="1.0 0.0 0.0" />
+        <limit lower="-0.015" upper="0.015" effort="50" velocity="0.1" />
+    </joint>
+    <gazebo>
+        <plugin
+            filename="libgz_ros2_control-system.so"
+            name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+            <parameters>/home/jarvis/ros_ws/install/gripper_control/share/gripper_control/config/controllers.yaml</parameters> #Path for the yaml file containing the controller configuration. Make sure to update this path according to your setup.
+        </plugin>
+    </gazebo>
+    <gazebo reference="base_link">
+        <static>false</static>
+    </gazebo>
+    
+</robot>

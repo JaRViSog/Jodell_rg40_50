@@ -1,0 +1,40 @@
+epg40_050_config:
+  port: /dev/ttyACM0
+  baud: 115200
+  slave_id: 9
+  presets:
+    '1':
+      name: egg
+      pos: 100
+      spd: 15
+      frc: 16
+    '2':
+      name: Gentle Close
+      pos: 255
+      spd: 64
+      frc: 128
+    '3':
+      name: Fast Open
+      pos: 0
+      spd: 255
+      frc: 255
+    '4':
+      name: Fast Close
+      pos: 255
+      spd: 255
+      frc: 255
+    '5':
+      name: Precision 25%
+      pos: 64
+      spd: 32
+      frc: 96
+    '6':
+      name: Precision 50%
+      pos: 128
+      spd: 32
+      frc: 96
+    '7':
+      name: Precision 75%
+      pos: 192
+      spd: 32
+      frc: 96

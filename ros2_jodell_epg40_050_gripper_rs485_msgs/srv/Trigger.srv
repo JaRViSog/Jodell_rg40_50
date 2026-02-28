@@ -1,0 +1,4 @@
+
+---
+bool success        # True if successful, False otherwise
+string message      

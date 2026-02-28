@@ -1,0 +1,4 @@
+# Request
+---
+# Response
+string presets_json  # will return all presets as a JSON string
